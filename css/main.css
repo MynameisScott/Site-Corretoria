@@ -4,9 +4,13 @@ body {
     margin: 0 auto;
 }
 
+ul {
+    padding: 0px !important;
+}
+
 .menu-principal {
     width: 100%;
-    background-color: #9a5bff;
+    background-color: #808080;
     height: 60px;
 }
 
@@ -43,20 +47,35 @@ main {
 }
 
 .header-2 {
-    background-color: #ffe96c;
-    width: 100%;
-    border-bottom: 3px solid #ffe345;
+    background-color: #fff;
+    width: 980px;
+    margin: 0 auto;
+    padding: 13px;
+}
+
+.menu-urls {
+    height: 80px;
+    border-bottom: 3px solid #efefef;
 }
 
 .menu ul li {
     display: inline-block;
     color: #000;
     margin-left: 20px;
+    height: 51px;
+}
+
+.menu ul li:hover {
+    border-bottom: 2px solid #00bac6;
+}
+
+.menu ul li a:hover {
+    color: #00bac6;
 }
 
 .menu ul li a {
     display: inline-block;
-    color: #000;
+    color: #8b8b8b;
     text-decoration: none;
     font-size: 17px;
     text-transform: uppercase;
@@ -68,6 +87,76 @@ main {
 }
 
 .busca {
+    text-align: center;
     width: 30%;
     float: right;
+}
+
+.busca input {
+    background-image: url(../img/icone-search.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 96%;
+    padding: 7px;
+    padding-left: 12px;
+    width: 190px;
+    margin-top: 9px;
+    border: 1px solid #757575;
+}
+
+.col-100 {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+button.slick-prev,
+button.slick-next {
+    font-size: 0;
+    border: none;
+    height: 60px;
+    width: 36px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/esquerda.png);
+    filter: drop-shadow(0 0 2px rgb(255, 255, 255));
+    top: 40%;
+    cursor: pointer;
+}
+
+button.slick-prev {
+    left: 10%;
+}
+
+button.slick-next {
+    transform: scaleX(-1);
+    right: 10%;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #0000;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #00BAC6;
+}
+
+.slick-dots {
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 47%;
+    top: 91%;
+}
+
+.slick-dots li {
+    padding: 0 8px;
+    display: inline-block;
 }
